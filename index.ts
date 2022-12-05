@@ -31,3 +31,20 @@ function RetornarCaractere(nome2 : string) {
        console.log(nome2.substring(metade, 1))
     }
 }
+
+
+function Ordenar(numeros: number) : void{
+    let numero2 = String(numeros)
+    let numero1 = numero2.split("")
+
+    numero1.sort()
+    numero1.reverse()
+
+    let concatenar: string = ("")
+    for (let index = 0; index < numero1.length; index++) {
+        concatenar = concatenar + numero1[index]
+
+    }
+    let numerosNumber = parseInt(concatenar) 
+    console.log(numerosNumber)
+}

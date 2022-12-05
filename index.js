@@ -24,3 +24,15 @@ function RetornarCaractere(nome2) {
         console.log(nome2.substring(metade, 1));
     }
 }
+function Ordenar(numeros) {
+    var numero2 = String(numeros);
+    var numero1 = numero2.split("");
+    numero1.sort();
+    numero1.reverse();
+    var concatenar = ("");
+    for (var index_2 = 0; index_2 < numero1.length; index_2++) {
+        concatenar = concatenar + numero1[index_2];
+    }
+    var numerosNumber = parseInt(concatenar);
+    console.log(numerosNumber);
+}
